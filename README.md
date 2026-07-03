@@ -1,4 +1,4 @@
-# mcp-glpi-secure
+# GLPI-MCP-vZeroTrust
 
 MCP server for GLPI with **zero third-party runtime dependencies** — the MCP
 protocol (JSON-RPC 2.0 over stdio) is implemented directly, so there is no
