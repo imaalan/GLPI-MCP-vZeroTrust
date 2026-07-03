@@ -1,0 +1,41 @@
+{
+  "name": "mcp-glpi-secure",
+  "version": "1.0.0",
+  "description": "Zero-dependency, least-privilege MCP server for GLPI IT Service Management. No third-party runtime dependencies — no CVE surface.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-glpi-secure": "dist/index.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/index.js",
+    "test": "node --test",
+    "audit": "npm audit --audit-level=low",
+    "prepare": "tsc",
+    "prepublishOnly": "tsc && node --test"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "glpi",
+    "itsm",
+    "zero-dependency",
+    "secure"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
